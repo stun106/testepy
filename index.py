@@ -42,7 +42,6 @@
 #print(media1)
 
 #ex do dia ! 
-
 #a = int(10)
 #b = int(50)
 #a,b = b,a
@@ -53,13 +52,36 @@
 
 
 
-peso = float(input('digite seu peso: '))
-altura = float(input('digite sua altura: '))
-import math
-imc = math.ceil(peso/altura**2)
-if imc == 27 or imc <= 29 :
-    print('Seu IMC é ', imc,'Sobrepeso Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão. É importante rever seus hábitos. Procure um médico.5')
-else:
-    print('Seu IMC é', imc, 'Você esta obeso, va jogar basquete!')
+#peso = float(input('digite seu peso: '))
+#altura = float(input('digite sua altura: '))
+#import math
+#imc = math.ceil(peso/altura**2)
+#if imc == 27 or imc <= 29 :
+    #print('Seu IMC é ', imc,'Sobrepeso Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão. É importante rever seus hábitos. Procure um médico.5')
+#else:
+    #print('Seu IMC é', imc, 'Você esta obeso, va praticar um esporte!')
+
+#LP01-ex02
+#TF = float(input('digite uma temperatura em Fº '))
+#TF_Resultado = round((TF - 32) / 9)
+#T_Celsios = 5* TF_Resultado
+#print(f" Temperatura {TF}º Fahrenheit para {T_Celsios} Celsios" )
+
+#LP01 -ex04
+
+#eleitores = float(input('Total de eleitores: '))
+#V_Branco = float(input('Total de votos em branco: '))
+#V_Nulos = float(input('Total de votos nulos '))
+#V_Validos = float(input('Total de votos validos '))
+#validos = (V_Validos / 100) * eleitores / 100
+#branco = (V_Branco / 100) * eleitores / 100
+#nulos = (V_Nulos / 100) * eleitores / 100
+#print(f"Total de votos Validos no municipio : {validos}%"
+#f" Total de votos Nulos : {nulos}%"
+#f" total de votos em branco {branco}%")
+
+
+
+
 
 
