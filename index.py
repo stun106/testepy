@@ -112,4 +112,19 @@
     #print(f"sua media foi {media}, estude mais da proxima vez!")
 
 
+#---------------------------------------------------------------------------
+#primeira prova Lp01 (Infinity School)
 
+##1º
+#nome = input("digite seu nome: ")
+#print(f"olá {nome}, seja bem vindo!")
+
+##2º
+#numero = float(input("digite um numero "))
+#resultado1 = numero * numero
+#resultado2 = numero / 3
+#print  (f" o numero é {numero}, seu dobro é {resultado1} é sua terça parte é {resultado2}")
+
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
