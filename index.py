@@ -48,9 +48,7 @@
 #print('a= ',a, ' b= ', b)
 
 # exercicio da postila, calculando IMC
-
-
-
+     #(obs: perguntar o professor sobre os operadores logicos dessa função.)
 
 #peso = float(input('digite seu peso: '))
 #altura = float(input('digite sua altura: '))
@@ -80,8 +78,38 @@
 #f" Total de votos Nulos : {nulos}%"
 #f" total de votos em branco {branco}%")
 
+#LP06 -ex06
+
+#v_carro_f  = float(input('digite o valor do automovel: '))
+#v_carro_i_f = (73 * v_carro_f) / 100
+#valor_total_carro = (v_carro_f+v_carro_i_f)
+#print(f" Seu automóvel custara com todos os impostos atribuido: R$ {valor_total_carro}.")
 
 
+#-------------------------------------------------------------------------
+
+#INTRODUÇÃO A CONDICIONAIS
+
+#aula1 - ex1 
+
+#alunos = int(input('digite o numero de alunos para usar o elevador: '))
+#if alunos <= 10 :
+    #print("os alunos podem subir!")
+#else:
+   # print("excesso de peso! NAO PERMITIDO !!")
+
+
+# ex2 
+
+#aluno = input('digite o nome do aluno: ')
+#nota1 = float(input('digite a nota da avaliação I '))
+#nota2 = float(input('digite a nota da avaliação II '))
+#nota3 = float(input('digite a nota da avaliação III '))
+#media = round((nota1+nota2+nota3) / 3)
+#if media >= 6:
+    #print(f"Parabens sua media foi {media}! você passou!!")
+#else:
+    #print(f"sua media foi {media}, estude mais da proxima vez!")
 
 
 
