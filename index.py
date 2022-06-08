@@ -128,3 +128,45 @@
 #--------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------
+
+#ESTRUTURA CONDICIONAL
+
+#Ex1
+
+#numero = int(input("digite um numero: "))
+#numero_bol = True
+#if numero % 2:
+    #numero_bol = False
+    #print("falso")
+#else:
+    #numero_bol= True
+    #print("verdadeiro")
+    
+#ex2 
+
+#Temperatura = int(input("Digite sua temperatura: "))
+    #cancela = False
+    #if Temperatura <= 37 or Temperatura == 37: 
+#cancela:True
+#print(f"Sua temperatura é {Temperatura}º pode passar!")
+#else: 
+#ancela: False
+#print(f"Sua temperatura é {Temperatura}º procure um medico")
+
+
+
+
+#Ex 3 (hospital e respiradores)
+
+#respiradores = int(50)
+#hosp1 = int(input("digite o numero de ocupação deste hospital: "))
+#hosp_resp = int(input("digite quantos respitadores o hospital esta utilizando: "))
+#taxa_ocupaçao = (60 * hosp1) / 100
+#if taxa_ocupaçao < hosp_resp:
+    #print('"ERRO!" Dados incoerentes!')
+#elif taxa_ocupaçao <= 60 and hosp_resp >= respiradores:
+    #print(f"a taxa de ocupação no hosp1 é {taxa_ocupaçao}% e esta sendo utilizado {hosp_resp}, hospital no padrão")
+#else:
+    #print(f"a taxa de ocupação no hosp1 é {taxa_ocupaçao}% e esta sendo utilizado {hosp_resp}, iremos mandar mais 5 respiradores!")
+
+
