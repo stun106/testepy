@@ -55,9 +55,9 @@
 #import math
 #imc = math.ceil(peso/altura**2)
 #if imc == 27 or imc <= 29 :
-    #print('Seu IMC é ', imc,'Sobrepeso Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão. É importante rever seus hábitos. Procure um médico.5')
+#    print('Seu IMC é ', imc,'Sobrepeso Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão. É importante rever seus hábitos. Procure um médico.5')
 #else:
-    #print('Seu IMC é', imc, 'Você esta obeso, va praticar um esporte!')
+#    print('Seu IMC é', imc, 'Você esta obeso, va praticar um esporte!')
 
 #LP01-ex02
 #TF = float(input('digite uma temperatura em Fº '))
@@ -158,14 +158,14 @@
 
 #Ex 3 (hospital e respiradores)
 
-#respiradores = int(50)
+#Drespiradores = int(50)
 #hosp1 = int(input("digite o numero de ocupação deste hospital: "))
 #hosp_resp = int(input("digite quantos respitadores o hospital esta utilizando: "))
 #taxa_ocupaçao = (60 * hosp1) / 100
-#if taxa_ocupaçao < hosp_resp:
-    #print('"ERRO!" Dados incoerentes!')
+#if hosp1 < hosp_resp:
+#    print(f'{taxa_ocupaçao}"ERRO!" Dados incoerentes!')
 #elif taxa_ocupaçao <= 60 and hosp_resp >= respiradores:
-    #print(f"a taxa de ocupação no hosp1 é {taxa_ocupaçao}% e esta sendo utilizado {hosp_resp}, hospital no padrão")
+#    print(f"a taxa de ocupação no hosp1 é {taxa_ocupaçao}% e esta sendo utilizado {hosp_resp}, hospital no padrão")
 #else:
     #print(f"a taxa de ocupação no hosp1 é {taxa_ocupaçao}% e esta sendo utilizado {hosp_resp}, iremos mandar mais 5 respiradores!")
 
@@ -193,10 +193,13 @@ Industria4 = float(input("Industria IV: Adicione aqui os dados de indice poluent
 Industria5 = float(input("Industria V: Adicione aqui os dados de indice poluentes: "))
 Industria6 = float(input("Industria VI: Adicione aqui os dados de indice poluentes: "))
 G2_Poluição_Total = (Industria4+Industria5+Industria6) / 3
+
 if G2_Poluição_Total >= Limite_poluição2:
-    print(f' O indice de poluição do Grupo I é: {G2_Poluição_Total}, Atividades dos Grupos I e II suspenças.')
-elif G2_Poluição_Total > P_aceita and G1_Poluição_Total < Limite_poluição:
-     print(f' O indice de poluição do Grupo I é: {G2_Poluição_Total}, "ATENÇÃO" Seu grupo esta com altos indices poluentes!')
+    print(f' O indice de poluição do Grupo II é: {G2_Poluição_Total}, Atividades dos Grupos I e II suspenças.')
+
+elif G2_Poluição_Total > P_aceita and G2_Poluição_Total < Limite_poluição2:
+     print(f' O indice de poluição do Grupo II é: {G2_Poluição_Total}, "ATENÇÃO" Seu grupo esta com altos indices poluentes!')
+
 else: 
      print(f' O indice de poluição do Grupo I é: {G2_Poluição_Total}, Bom trabalho!')
 
@@ -208,12 +211,15 @@ Industria8 = float(input("Industria VIII: Adicione aqui os dados de indice polue
 Industria9 = float(input("Industria IX: Adicione aqui os dados de indice poluentes: "))
 G3_Poluição_Total = (Industria7+Industria8+Industria9) / 3
 print(f"O indice de poluição do Grupo III é {G3_Poluição_Total}")
+
 if G3_Poluição_Total >= Limite_poluição3:
-    print(f' O indice de poluição do Grupo I é: {G3_Poluição_Total}, Atividades de todos os Grupos Suspenças.')
+    print(f' O indice de poluição do Grupo III é: {G3_Poluição_Total}, Atividades de todos os Grupos Suspenças.')
+
 elif G3_Poluição_Total > P_aceita and G3_Poluição_Total < Limite_poluição3:
-     print(f' O indice de poluição do Grupo I é: {G3_Poluição_Total}, "ATENÇÃO" Seu grupo esta com altos indices poluentes!')
+     print(f' O indice de poluição do Grupo III é: {G3_Poluição_Total}, "ATENÇÃO" Seu grupo esta com altos indices poluentes!')
+
 else: 
-     print(f' O indice de poluição do Grupo I é: {G3_Poluição_Total}, Bom trabalho!')
+     print(f' O indice de poluição do Grupo III é: {G3_Poluição_Total}, Bom trabalho!')
 
 
 #condição geral 
