@@ -227,17 +227,17 @@
 #print(f"O indice de poluição gerada pelas empresas é: {All_Grupos}")
 
 #ex5 (times)
-time1 = input('Digite seu time preferido da NBA: ')
-time2 = input('Digite um time que você menos gosta da NBA: ')
-pontos_time1 = int(input('Digite quantos pontos fizeram seu time favorito:')) 
-pontos_time2 = int(input('Digite quantos pontos fizeram o outro time: '))
+#time1 = input('Digite seu time preferido da NBA: ')
+#time2 = input('Digite um time que você menos gosta da NBA: ')
+#pontos_time1 = int(input('Digite quantos pontos fizeram seu time favorito:')) 
+#pontos_time2 = int(input('Digite quantos pontos fizeram o outro time: '))
 
-if pontos_time1 == pontos_time2:
-    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} EMPATE!" )
-elif pontos_time1 < pontos_time2:
-    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} DERROTA :/!" )
-else:
-    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} VITORIOSO, UMA MAQUINA, UMA BESTA ENJAULADA COM ODIO SEU FILHO DA P*** !" )
+#if pontos_time1 == pontos_time2:
+#    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} EMPATE!" )
+#elif pontos_time1 < pontos_time2:
+#    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} DERROTA :/!" )
+#else:
+#    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} VITORIOSO, UMA MAQUINA, UMA BESTA ENJAULADA COM ODIO SEU FILHO DA P*** !" )
 
 
 
@@ -249,7 +249,49 @@ else:
 
 #Livro: Aprenda Pynthon3 do jeito certo. 
 
+#LOOPS E LISTAS  
+
+# numero = [1,2,3,4,5]
+# frutas = ['maça', 'laranja','uva','limao']
+# escolha = [1, 'maça', 2, 'laranja',3,'limao']
+
+# # esse primeiro tipo de loop 'for' percorre uma lista
+# for number in numero:
+#     print(f'esses são os numeros {number}\n')
+
+# # mesma coisa com o codigo a cima
+# for fruits in frutas:
+#     print(f'essas são as frutas {fruits}\n')
+
+# for i in escolha:
+#     print(f'peguei {i}\n')
+
+# # PRESTE ATENÇÃO NISSO! tambem podemos construir listas, primeiro comece com uma vazia
+
+# elementos = []
+
+# # entao use a função range para fazer a contagem de 0 a 5
+
+# for i in range(0,6):
+#    print(f'adicionando {i} para a lista')
+
+# #'append' é uma funçao que as listas entendem
+# elementos.append(i)
+
+#  #agora podemos imprimi-las tbm
+
+# for i in elementos:
+#    print(f'elementos são {i}')
 
 
+# LOOPS WHILE
 
-
+n = 0
+numeros = [] 
+while n < 6:
+    print(f'o numero {n}')
+    numeros.append(n)
+    n=n+1
+    print(f'da lista{numeros}')
+    print(f'representa na lista como {n}')
+    
