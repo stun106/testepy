@@ -286,12 +286,30 @@
 
 # LOOPS WHILE
 
-n = 0
-numeros = [] 
-while n < 6:
-    print(f'o numero {n}')
-    numeros.append(n)
-    n=n+1
-    print(f'da lista{numeros}')
-    print(f'representa na lista como {n}')
-    
+# n = 0
+# numeros = [] 
+# while n < 6:
+#     print(f'o numero {n}')
+#     numeros.append(n)
+#     n=n+1
+#     print(f'da lista{numeros}')
+#     print(f'representa na lista como {n}')
+
+# faça um loop que multiplique como uma tabuada
+
+# n = 0
+# mult = int(input('digite um multiplicador: '))
+
+# while n < 11:
+#     res = mult*n
+#     print(f'{mult} x {n} = {n}')
+#     n=n+1
+
+#acessando elementos da lista
+
+animais = ['urso', 'leão', 'pato', 'galinha']
+aves = animais [2],[3]
+print(animais[2], animais[3])
+
+
+
