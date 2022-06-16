@@ -240,11 +240,40 @@
 #    print(f"{time1} {pontos_time1} X {pontos_time2} {time2} VITORIOSO, UMA MAQUINA, UMA BESTA ENJAULADA COM ODIO SEU FILHO DA P*** !" )
 
 
+#Ex (Elif = else+if)
+
+# nome = (input('digite o nome do empregado: '))
+# registro = 6666
+# ano = int(input(f'digite o ano que {nome} nasceu: ')) 
+# ano_ingresso = int(input('digite o ano de ingresso na empresa:'))
+# ano_res = int(2022 - ano)
+# data_in = int(2022 - ano_ingresso)
+# if ano_res == 65 or ano_res > 65: 
+#     print(f'Funcionario {nome} com numero de registro {registro} tem {ano_res}anos e trabalha a {data_in} anos conosco, por isso esta apto para se aposentar . ')
+# elif data_in == 30 and data_in > 30: 
+#     print(f'Funcionario {nome} com numero de registro {registro} tem {ano_res}anos e trabalha a {data_in} anos conosco, por isso esta apto para se aposentar por tempos de serviço.')
+# else: 
+#     print(f'Funcionario {nome} com numero de registro {registro} tem {ano_res}anos e trabalha a {data_in} anos conosco, por isso não esta apto para aposentadoria .')
 
 
+#==================================================================================================
 
+#ex (usando listas + condições)
 
+# nome = input('digite o nome do cidadão: ')
+# funcionarios = ['2604','josé', '2502','diogo']
+# nome_f = funcionarios1 = [0],[1] 
+# nome_f  = True
+# ano = int(input(f'digite o ano que nasceu: ')) 
+# ano_ingresso = int(input('digite o ano de ingresso na empresa:'))
+# ano_res = int(2022 - ano)
+# data_in = int(2022 - ano_ingresso)
+# if nome_f == True:
+#     print(f'{funcionarios[1]}  com numero de registro {funcionarios[0]}')
 
+#===================================================================================================
+
+    
 #----------------------------------------------------------------------------------------
 
 #Livro: Aprenda Pynthon3 do jeito certo. 
@@ -302,14 +331,28 @@
 
 # while n < 11:
 #     res = mult*n
-#     print(f'{mult} x {n} = {n}')
-#     n=n+1
+#     print(f'{mult} x {n} = {res}')
+#     n+=1
 
 #acessando elementos da lista
 
-animais = ['urso', 'leão', 'pato', 'galinha']
-aves = animais [2],[3]
-print(animais[2], animais[3])
+# animais = ['urso', 'leão', 'pato', 'galinha']
+# aves = animais [2],[3]
+# print(animais[2], animais[3])
 
 
 
+
+
+#Produto_1 = int(input(' para escolher Chacha dumdum digite "1": '))
+#print (f'valor: {cam1}R$')
+#Produto_2 = int(input('para escolher Cyclone digite "2": '))
+#print (f'valor: {cam2}R$')
+#Produto_3 = int(input('para escolher C&A digite "3": '))
+#print (f'valor: {cam3}R$')
+# if cam1 < 40: 
+#     print (f' Chacha dumdum é o mais barato! {cam1}R$')
+# elif cam2 < 40:
+#     print (f' Cyclone e o mais barato  ! {cam2} {Produto_2}R$')
+# else:
+#     print (f' C&A é o mais barato! {cam3} {Produto_3}R$')
