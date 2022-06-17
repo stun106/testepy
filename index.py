@@ -384,11 +384,12 @@
 
 
 
-# populaçao = int(input('digite um numero'))
-# n = 0
-# pessoas = []
-# while n < populaçao:
+
+
+
+
+
+
     
-#     pessoas.append(populaçao)
-#     print(f'{pessoas}')
-#     n%=2
+    
+
