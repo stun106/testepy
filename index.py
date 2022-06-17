@@ -255,6 +255,44 @@
 # else: 
 #     print(f'Funcionario {nome} com numero de registro {registro} tem {ano_res}anos e trabalha a {data_in} anos conosco, por isso não esta apto para aposentadoria .')
 
+#MAIS EXERCICIOS DE CONDIÇÕES
+
+#Ex1
+# Passagem_m = float(0.85)
+# passagem_l = float (0.65)
+# km_base = int(250)
+# km = int(input('quantos quilometros pretende viajar?'))
+# if km > km_base: 
+#     valor1_ = km*passagem_l
+#     print(f'Sua passagem sera R${passagem_l} por km que ficara no valor de R${valor1_}')
+# else:
+#     valor2_ = km*Passagem_m
+#     print(f'Sua passagem sera R${Passagem_m} por km que ficara no valor de R${valor2_}')
+
+#Ex2 c/ listas
+# passagem = [0.85,0.65]
+# km_base = int(250)
+# km = int(input('quantos quilometros pretende viajar?'))
+# if km > km_base: 
+#     valor1_ = km*passagem[0]
+#     print(f'Sua passagem sera R${passagem[1]} por km que ficara no valor de R${valor1_}')
+# else:
+#     valor2_ = km*passagem[1]
+#     print(f'Sua passagem sera R${passagem[0]} por km que ficara no valor de R${valor2_}')
+
+# print('fim')
+
+#ex3 
+
+# salario = int(input('digite seu salario: '))
+# V_parcela = int(input('digite o valor da parcela: '))
+# parcela_porcento = float(0.30)
+# parcela_max = salario*parcela_porcento
+# if V_parcela > parcela_max:
+#     print(f'o valor da parcela esta MAIOR que 30% do seu salario, seu credito NAO foi aprovado ')
+# else:
+#     print(f'o valor da parcela esta MENOR que 30%, OK, credito aprovado!')
+
 
 #==================================================================================================
 
@@ -270,6 +308,8 @@
 # data_in = int(2022 - ano_ingresso)
 # if nome_f == True:
 #     print(f'{funcionarios[1]}  com numero de registro {funcionarios[0]}')
+# else: 
+#     print
 
 #===================================================================================================
 
@@ -334,25 +374,21 @@
 #     print(f'{mult} x {n} = {res}')
 #     n+=1
 
-#acessando elementos da lista
 
-# animais = ['urso', 'leão', 'pato', 'galinha']
-# aves = animais [2],[3]
-# print(animais[2], animais[3])
+# automovel_autonomia = int(12)
+# tempo_viagem = float(input('Digite o tempo da viagem: '))
+# velocidade_m = float(input('digite a velocidade media durante a viagem: '))
+# distancia = tempo_viagem*velocidade_m
+# litros_usados = distancia / automovel_autonomia
+# print(f'concluindo a viagem em {tempo_viagem}Hr, numa velocidade de {velocidade_m}KM/h, percorrendo uma distancia de {distancia}KM sua autonomia foi {litros_usados}L')
 
 
 
-
-
-#Produto_1 = int(input(' para escolher Chacha dumdum digite "1": '))
-#print (f'valor: {cam1}R$')
-#Produto_2 = int(input('para escolher Cyclone digite "2": '))
-#print (f'valor: {cam2}R$')
-#Produto_3 = int(input('para escolher C&A digite "3": '))
-#print (f'valor: {cam3}R$')
-# if cam1 < 40: 
-#     print (f' Chacha dumdum é o mais barato! {cam1}R$')
-# elif cam2 < 40:
-#     print (f' Cyclone e o mais barato  ! {cam2} {Produto_2}R$')
-# else:
-#     print (f' C&A é o mais barato! {cam3} {Produto_3}R$')
+# populaçao = int(input('digite um numero'))
+# n = 0
+# pessoas = []
+# while n < populaçao:
+    
+#     pessoas.append(populaçao)
+#     print(f'{pessoas}')
+#     n%=2
