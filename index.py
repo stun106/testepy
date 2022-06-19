@@ -313,7 +313,7 @@
 
 #===================================================================================================
 
-    
+
 #----------------------------------------------------------------------------------------
 
 #Livro: Aprenda Pynthon3 do jeito certo. 
@@ -375,6 +375,9 @@
 #     n+=1
 
 
+
+#PROVA2
+
 # automovel_autonomia = int(12)
 # tempo_viagem = float(input('Digite o tempo da viagem: '))
 # velocidade_m = float(input('digite a velocidade media durante a viagem: '))
@@ -382,12 +385,41 @@
 # litros_usados = distancia / automovel_autonomia
 # print(f'concluindo a viagem em {tempo_viagem}Hr, numa velocidade de {velocidade_m}KM/h, percorrendo uma distancia de {distancia}KM sua autonomia foi {litros_usados}L')
 
+#========================================================
+
+# n = 1
+# par = impar = 0
+# n = int(input('digite um numero'))
+# while n != 0:
+#     if n !=0:
+#         if n % 2 == 0:
+#             par+=1
+#     else:
+#         impar+=1
+# print()
+
+   
 
 
+    
 
+# x =s = 0
+# while x != 50:
+#     x = int(input('digite um numero: '))
+#     if x==50:
+#         break
+#     s+=x
+# print(f'a soma é {s}')
 
+# s = n = 0   
+# for numero in range(1,6):
+#    n = int(input('digite um numero: '))
+#    s += n
+# print(f'a soma dos numeros é {s}' )
+    
 
-
+s = n = 0
+for n in range(1,6):
 
 
     
