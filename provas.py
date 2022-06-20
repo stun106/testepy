@@ -104,6 +104,8 @@
 #     print('reprovado')
 
 
+"""QUESTÃO 5""""
+
 valor = 0
 for p in range (1,3+1):
     produto = float(input('Digite o valor da compra: '))
