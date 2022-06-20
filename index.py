@@ -411,15 +411,14 @@
 #     s+=x
 # print(f'a soma é {s}')
 
-# s = n = 0   
-# for numero in range(1,6):
-#    n = int(input('digite um numero: '))
-#    s += n
-# print(f'a soma dos numeros é {s}' )
+s = n = 0   
+for numero in range(1,6):
+   n = int(input('digite um numero: '))
+   s += n
+print(f'a soma dos numeros é {s}' )
     
 
-s = n = 0
-for n in range(1,6):
+
 
 
     
