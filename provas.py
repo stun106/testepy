@@ -104,28 +104,29 @@
 #     print('reprovado')
 
 
-"""QUESTÃO 5""""
+"""QUESTÃO 5"""
 
-valor = 0
-for p in range (1,3+1):
-    produto = float(input('Digite o valor da compra: '))
-    r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
-    valor += produto
-    print(f'R${valor}')
-    if r!='s' and r != 'n': 
-        print('verifique seus dados')
-        break
-    elif valor == 500:
-        
-        print(f'o cliente ganhou 1% desconto e o valor final do produto é: R${valor}')
-    elif valor >= 600 and valor <= 700:
-        print(f'o cliente ganhou 2% desconto e o valor final do produto é: R${valor*2/100}')
-    else: 
-        print('Cliente nao tem direito a desconto')
+
+# valor_d = 0
+# valor = 0
+# desconto = 0
+# for p in range (1,3+1):
+#     produto = float(input('Digite o valor da compra: '))
+#     # r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
+#     valor += produto
+#     print(f'R${valor}')
+#     # if r!='s' and r != 'n': 
+#     #     print('verifique seus dados')
+#     #     break
+#     if valor >= 500 or valor <= 3000 or valor + 100:
+#         desconto+=1 
+#         res = (valor-desconto)/100
+#         print(f'o cliente ganhou um desconto {desconto}% ou seja R$-{res}, o produto ficará no valor de {valor-res} ')
+#     else: 
+#         print('Cliente nao tem direito a desconto')
    
    
         
 
     
-
-   
+ 
