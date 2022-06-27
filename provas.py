@@ -112,12 +112,12 @@
 # desconto = 0
 # for p in range (1,3+1):
 #     produto = float(input('Digite o valor da compra: '))
-#     # r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
+#     r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
 #     valor += produto
 #     print(f'R${valor}')
-#     # if r!='s' and r != 'n': 
-#     #     print('verifique seus dados')
-#     #     break
+#     if r!='s' and r != 'n': 
+#         print('verifique seus dados')
+#         break
 #     if valor >= 500 or valor <= 3000 or valor + 100:
 #         desconto+=1 
 #         res = (valor-desconto)/100

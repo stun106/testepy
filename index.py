@@ -376,48 +376,50 @@
 
 
 
-#PROVA2
+#===========================================================
 
-# automovel_autonomia = int(12)
-# tempo_viagem = float(input('Digite o tempo da viagem: '))
-# velocidade_m = float(input('digite a velocidade media durante a viagem: '))
-# distancia = tempo_viagem*velocidade_m
-# litros_usados = distancia / automovel_autonomia
-# print(f'concluindo a viagem em {tempo_viagem}Hr, numa velocidade de {velocidade_m}KM/h, percorrendo uma distancia de {distancia}KM sua autonomia foi {litros_usados}L')
+#APOSTILHA 3 - ESTRUTURA DE REPETIÇÃO
 
-#========================================================
-
-# n = 1
-# par = impar = 0
-# n = int(input('digite um numero'))
-# while n != 0:
-#     if n !=0:
-#         if n % 2 == 0:
-#             par+=1
-#     else:
-#         impar+=1
-# print()
-
-   
+"""EXERCICIO 1 - SORTEANDO UM NUMERO"""
 
 
-    
-
-# x =s = 0
-# while x != 50:
-#     x = int(input('digite um numero: '))
-#     if x==50:
+# import random
+# sorteado =random.randrange(1,10)
+# for n in range(1,10+1):  
+#     escolha = int(input('escolha um numero: ')) 
+#     if escolha == sorteado: 
+#         print(f'o numero sorteado foi {sorteado}, parabens voce ganhou!')
 #         break
-#     s+=x
-# print(f'a soma é {s}')
 
-s = n = 0   
-for numero in range(1,6):
-   n = int(input('digite um numero: '))
-   s += n
-print(f'a soma dos numeros é {s}' )
+#     elif sorteado > escolha:
+#         print(f'voce escolheu {escolha}, o numero que você escolheu é maior que o sorteado')
+#     else: 
+#         print(f'voce escolheu {escolha}, o numero que você escolheu é menor que o sorteado')
+        
+
+'''EXERCICIO 2 - PROGRAMA PARA MEDIR VALOR DE TONELADAS'''
+
+
+
+
+
+Value_FIX_TN = float(15.000)
+Pergunta = 'S'
+TONELADAS = 0
+while Pergunta == 'S':
+    t = int(input('digite o numero de toneladas transportadas: ')) 
+    print(t,'t')
+    Pergunta = str(input('deseja continuar calculando ? [{S}/{N}]  ')).upper()
+if  Pergunta == 'S':
+    TONELADAS += t 
+    print(f'valor total de toneladas: {TONELADAS}t')
+else:
+    res = Value_FIX_TN*t
+    print(f'o valor total faturado foi R${res:,.3f}')
     
-
+        
+    
+ 
 
 
 
