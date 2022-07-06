@@ -12,6 +12,10 @@
 
 
 
+#====================================================================================================
+
+
+
 #apostilha 2 prova 2 
 
 """Questão 1"""
@@ -121,24 +125,40 @@
 """QUESTÃO 5"""
 
 
-valor_d = 0
-valor = 0
-desconto = 0
-for p in range (1,3+1):
-    produto = float(input('Digite o valor da compra: '))
-    r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
-    valor += produto
-    print(f'R${valor}')
-    if r!='s' and r != 'n': 
-        print('verifique seus dados')
-        break
-    if valor >= 500 and valor <= 3000 and valor + 100:
-        desconto+=1 
-        res = (valor*desconto)/100
-        print(f'o cliente ganhou um desconto {desconto}% ou seja R$-{res}, o produto ficará no valor de {valor-res} ')      
-    else: 
-        print('Cliente nao tem direito a desconto')
+# valor_d = 0
+# valor = 0
+# desconto = 0
+# for p in range (1,3+1):
+#     produto = float(input('Digite o valor da compra: '))
+#     r = str(input('o cliente deseja mais algum produto? S/N: ')).lower()
+#     valor += produto
+#     print(f'R${valor}')
+#     if r!='s' and r != 'n': 
+#         print('verifique seus dados')
+#         break
+#     if valor >= 500 and valor <= 3000 and valor + 100:
+#         desconto+=1 
+#         res = (valor*desconto)/100
+#         print(f'o cliente ganhou um desconto {desconto}% ou seja R$-{res}, o produto ficará no valor de {valor-res} ')      
+#     else: 
+#         print('Cliente nao tem direito a desconto')
         
 
+#======================================================================================================================
+
+#Apostila 3 prova 3
+
+number = 0
+number2 = 0
+while number != 10:
+    number = int(input('digite um numero: '))
+    number2 = int(input('digite outro numero: '))
+    confirmador = str(input('Aperte "Y" para prosseguir: ')).upper()
+    operações = [number + number2, number * number2, (number+number2)/2, number**2, number**3]
+    if confirmador != 'Y':
+        print('Verifique seus dados, Ultilize as instruções a cima!')
+        continue
+    else:
+        print(f'A soma entre os numeros é {operações[0]}\n A multiplicacão dos dois numeros é {operações[1]}\n A média entre eles {operações[2]}\n O primeiro elevado ao quadrado {operações[3]}\n O segundo elevado ao cubo {operações[4]}' )
 
  
