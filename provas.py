@@ -154,7 +154,7 @@ while number != 10:
     number = int(input('digite um numero: '))
     number2 = int(input('digite outro numero: '))
     confirmador = str(input('Aperte "Y" para prosseguir: ')).upper()
-    operações = [number + number2, number * number2, (number+number2)/2, number**2, number**3]
+    operações = [number + number2, number * number2, (number+number2)/2, number**2, number2**3]
     if confirmador != 'Y':
         print('Verifique seus dados, Ultilize as instruções a cima!')
         continue
