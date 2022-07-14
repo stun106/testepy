@@ -212,3 +212,4 @@
 #     print(f'R$ {s_worker+rjst[1]}')
 # else: 
 #     print(f'R$ {s_worker+rjst[0]}')
+
