@@ -89,7 +89,7 @@
 #     idade = int(input(f'digite a idade da {pessoas}º pessoa: '))
 #     if idade == 0 or idade < 11:
 #         print('crianças nao participaram dessa pesquisa.')
-#         break
+#         continue
 #     if idade <= 15:  
 #         adolecente += 1
 #     elif idade > 16 and idade < 30:
@@ -213,3 +213,9 @@
 # else: 
 #     print(f'R$ {s_worker+rjst[0]}')
 
+
+
+    
+
+
+    
