@@ -102,8 +102,14 @@
 
 
 
+#==========================================
+"""Calculo vetorial usando FOR"""
 
-
+# vetor=1
+# number= int(input('Digite um numero: '))
+# for vetorial in range(number,1,-1):
+#     vetor*=vetorial
+#     print(vetor)
 
 
 
