@@ -125,24 +125,5 @@
 # dobra(valores)
 # print(valores)
 
-
-
-
-def acharMinimoDeDias(drç):
-    days = 0
-    while days < len(drç):
-        drç+=days
-        days+=1
-
-
-
-
-durações = [ 1.90, 1.04, 1.25, 2.5, 1.75 ]
-acharMinimoDeDias(durações)
-print(durações)
-
-
-   
-
-
+#============================================
 
