@@ -113,11 +113,35 @@
 
 
 
+# def dobra(lst):
+#     pos = 0
+#     while pos < len(lst):
+#         lst[pos] *= 2
+#         pos+=1
+
+
+
+# valores = [6,5,1,8,2]      
+# dobra(valores)
+# print(valores)
 
 
 
 
-        
+def acharMinimoDeDias(drç):
+    days = 0
+    while days < len(drç):
+        drç+=days
+        days+=1
+
+
+
+
+durações = [ 1.90, 1.04, 1.25, 2.5, 1.75 ]
+acharMinimoDeDias(durações)
+print(durações)
+
+
    
 
 
