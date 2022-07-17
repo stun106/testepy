@@ -47,7 +47,7 @@ def Baium_room():
     escolha = input('>')
     if 'fugir' in escolha:
         start()
-    elif 'lutar' in escolha:
+    elif 'ficar' in escolha:
         dead('Nem sempre o bem vence o mal!')
     else:
         Baium_room()
@@ -63,6 +63,7 @@ def dead(Descanse):
         exit(0)
 
 def start():
+    print('-'*50)
     print('Então você caiu no sono...')
     print('Você esta num lugar sombrio, há uma porta para sua direita e esquerda...')
     print('qual porta escolher?')
