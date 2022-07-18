@@ -126,4 +126,11 @@
 # print(valores)
 
 #============================================
+from time import sleep
+def regressiva():
+    for x in range(10,-1,-1):
+        print(x)
+        sleep(0.5)
+
+
 
