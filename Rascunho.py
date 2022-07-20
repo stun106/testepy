@@ -113,6 +113,31 @@
 
 
 
+
+
+'''Numeros primos '''
+# cont = 0
+# number = int(input('digite um numero: '))
+# for primo in range(1,number+1):
+#     if number % primo  == 0:
+#         cont+=1
+
+# if cont == 2:
+#     print(primo,'primo')
+# else:
+#     print('nao é primo')
+
+#============================================
+'''função para contagem regressiva'''
+
+# from time import sleep
+# def regressiva():
+#     for x in range(10,-1,-1):
+#         print(x)
+#         sleep(0.5)
+
+'''função dobrando valores de uma lista'''
+
 # def dobra(lst):
 #     pos = 0
 #     while pos < len(lst):
@@ -125,12 +150,7 @@
 # dobra(valores)
 # print(valores)
 
-#============================================
-from time import sleep
-def regressiva():
-    for x in range(10,-1,-1):
-        print(x)
-        sleep(0.5)
+# =======================================
 
 
 

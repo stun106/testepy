@@ -214,8 +214,90 @@
 #     print(f'R$ {s_worker+rjst[0]}')
 
 
+#==========================================================
 
+'''Prova Introdução ao Python e Estrutura Condicional'''
+
+
+
+'questão 1'
+# while True:
+#     sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']
+#     DaY= int(input('Dia de Nascimento: '))
+#     moUnTh = str(input('Mês de Nascimento: '))
+#     confirme = str(input('Digite "Y" para continuar: ')).lower()
+#     if confirme != 'y':
+#         print('Siga as instruções a cima!')
+#     elif DaY >= 21 and moUnTh == 'janeiro' or  moUnTh == 'fevereiro' and DaY <=18:
+#         print(sIgNoS[10])
+#         break
+#     elif DaY >= 19 and moUnTh == 'fevereiro' or moUnTh == 'março' and DaY <= 20:
+#         print(sIgNoS[11])
+#         break
+#     elif DaY >= 21 and moUnTh == 'março' or moUnTh == 'abril' and DaY <= 20:
+#         print(sIgNoS[0])
+#         break
+#     elif DaY >= 21 and moUnTh == 'abril' or moUnTh == 'maio' and DaY <= 20:
+#         print(sIgNoS[1])
+#         break
+#     elif DaY >= 21 and moUnTh == 'junho' or moUnTh == 'julho' and DaY <= 22:
+#         print(sIgNoS[3])
+#         break
+#     elif DaY >= 23 and moUnTh == 'julho' or moUnTh == 'agosto' and DaY <= 22:
+#         print(sIgNoS[4])
+#         break
+#     elif DaY >= 23 and moUnTh == 'agosto' or moUnTh == 'setembro' and DaY <= 22:
+#         print(sIgNoS[5])
+#         break
+#     elif DaY >= 23 and moUnTh == 'setembro' or moUnTh == 'outubro' and DaY <= 22:
+#         print(sIgNoS[6])
+#         break
+#     elif DaY >= 23 and moUnTh == 'outubro' or moUnTh == 'novembro' and DaY <= 21:
+#         print(sIgNoS[7])
+#         break
+#     elif DaY >= 22 and moUnTh == 'novembro' or moUnTh == 'dezembro' and DaY <= 21:
+#         print(sIgNoS[8])
+#         break
+#     else: 
+#         print(sIgNoS[9])
+#         break
+        
+
+
+
+
+'questão 2'
+# year = int(input('digite o ano que nasceu'))
+# month = int(input('digite o mes que nasceu'))
+# day = int(input('digite o dia que nasceu'))
+# age = 2022-year
+# print(f'{age},{month},{day}')
+# if month >= 12 and day >=30:
+#     print('"Verifique seus dados!"')
+# elif year < 1900:
+#     print('você é um ser humano?')
+# else: 
+#     live = int(age*365)+month*30+day
     
+#     print(live)
+    
+# base = int(input('digite a base da area do triangulo: '))
+# altura = int(input('digite a altura do triangulo: '))
+# print(base*altura)
 
+
+
+
+'''questão 3'''
+# cont = 0
+# number = int(input('digite um numero: '))
+# for primo in range(1,number+1):
+#     if number % primo  == 0:
+#         cont+=1
+
+# if cont == 2:
+#     print(primo,'primo')
+# else:
+#     print(primo,'nao é primo')
 
     
