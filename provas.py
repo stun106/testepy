@@ -289,15 +289,81 @@
 
 
 '''questão 3'''
+
 # cont = 0
 # number = int(input('digite um numero: '))
-# for primo in range(1,number+1):
+# for primo in range(1,number):
 #     if number % primo  == 0:
-#         cont+=1
+        
 
 # if cont == 2:
 #     print(primo,'primo')
 # else:
 #     print(primo,'nao é primo')
 
-    
+#==============================================
+
+#Prova Estrutura de Repetição (em Python) 
+
+"""Questão 1 [pendente]
+[LP-A04] Faça um programa que receba 2 (Dois) números inteiros e positivos e imprima na tela todos os números primos que existem entre eles.
+
+Exemplo:
+
+Entrada
+1 10
+
+Saída
+
+2 3 5 7"""
+
+
+
+'''questão 2'''
+
+
+# litros = []
+# somaL = 0
+# Quant_V = int(input('Informe quantos vazamentos notificados: '))
+# for L in range(1,Quant_V+1):
+#     Quant_H2o = int(input('Informe a quantidade de agua perdida por hora: '))
+#     Quant__hrl = int(input('Informe a quantidade de horas que o vazamento ficou aberto: '))         
+#     res = Quant_H2o*Quant__hrl
+#     litros.append(res)
+
+
+# for s in litros: 
+#     somaL += s 
+# print(f'quantidade de água desperdiçada em vazamentos de água por toda a cidade é {somaL} litros.')
+
+
+'''questao 3'''
+
+# direção = 0
+# while True:
+#     direction = input('Digite a direção que o carro irá percorrer: ')
+#     if direction == 'direita':
+#         direção+=1
+#     elif direction == 'esquerda':
+#         direção+=1
+#     elif direction == 'frente':
+#         direção+=1
+#     elif direction == 'parar':
+#         break
+#     else:
+#         print('verifique seus dados')
+
+# print(f'{direção/100} KM')
+
+
+  
+
+      
+
+
+
+
+
+
+
+

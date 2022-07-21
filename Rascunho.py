@@ -153,4 +153,16 @@
 # =======================================
 
 
+litros = []
+soma = 0
+Quant_V = int(input('Informe quantos vazamentos notificados: '))
+for L in range(1,Quant_V+1):
+    Quant_H2o = int(input('Informe a quantidade de agua perdida por hora: '))
+    Quant__hrl = int(input('Informe a quantidade de horas que o vazamento ficou aberto: '))
+    res = Quant_H2o*Quant__hrl
+    litros.append(res)
+print(litros)
 
+for s in litros: 
+    soma += s 
+print(soma)
