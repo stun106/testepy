@@ -220,7 +220,7 @@
 
 
 
-'questão 1'
+# 'questão 1'
 # while True:
 #     sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']
 #     DaY= int(input('Dia de Nascimento: '))
@@ -228,40 +228,30 @@
 #     confirme = str(input('Digite "Y" para continuar: ')).lower()
 #     if confirme != 'y':
 #         print('Siga as instruções a cima!')
-#     elif DaY >= 21 and moUnTh == 'janeiro' or  moUnTh == 'fevereiro' and DaY <=18:
-#         print(sIgNoS[10])
-#         break
-#     elif DaY >= 19 and moUnTh == 'fevereiro' or moUnTh == 'março' and DaY <= 20:
-#         print(sIgNoS[11])
-#         break
 #     elif DaY >= 21 and moUnTh == 'março' or moUnTh == 'abril' and DaY <= 20:
 #         print(sIgNoS[0])
-#         break
 #     elif DaY >= 21 and moUnTh == 'abril' or moUnTh == 'maio' and DaY <= 20:
 #         print(sIgNoS[1])
-#         break
-#     elif DaY >= 21 and moUnTh == 'junho' or moUnTh == 'julho' and DaY <= 22:
+#     elif DaY >= 21 and moUnTh == 'maio' or moUnTh == 'junho' and DaY <= 22:
+#         print(sIgNoS[2])
+#     elif DaY >= 21 and moUnTh == 'junho' or moUnTh == 'julho' and DaY <= 20:
 #         print(sIgNoS[3])
-#         break
-#     elif DaY >= 23 and moUnTh == 'julho' or moUnTh == 'agosto' and DaY <= 22:
+#     elif DaY <=23 and moUnTh == 'julho' or moUnTh == 'agosto' and DaY <= 22:
 #         print(sIgNoS[4])
-#         break
-#     elif DaY >= 23 and moUnTh == 'agosto' or moUnTh == 'setembro' and DaY <= 22:
+#     elif DaY <=23 and moUnTh == 'agosto' or moUnTh == 'setembro' and DaY <= 22:
 #         print(sIgNoS[5])
-#         break
-#     elif DaY >= 23 and moUnTh == 'setembro' or moUnTh == 'outubro' and DaY <= 22:
+#     elif DaY <=23 and moUnTh == 'setembro' or moUnTh == 'outubro' and DaY <= 22:
 #         print(sIgNoS[6])
-#         break
-#     elif DaY >= 23 and moUnTh == 'outubro' or moUnTh == 'novembro' and DaY <= 21:
+#     elif DaY <=23 and moUnTh == 'outubro' or moUnTh == 'novembro' and DaY <= 21:
 #         print(sIgNoS[7])
-#         break
-#     elif DaY >= 22 and moUnTh == 'novembro' or moUnTh == 'dezembro' and DaY <= 21:
+#     elif DaY <=22 and moUnTh == 'novembro' or moUnTh == 'dezembro' and DaY <= 21:
 #         print(sIgNoS[8])
-#         break
-#     else: 
+#     elif DaY <=22 and moUnTh == 'dezembro' or moUnTh == 'janeiro' and DaY <= 20:
 #         print(sIgNoS[9])
-#         break
-        
+#     elif DaY <=21 and moUnTh == 'janeiro' or moUnTh == 'fevereiro' and DaY <= 18:
+#         print(sIgNoS[10])
+#     else:
+#         print(sIgNoS[11])
 
 
 
