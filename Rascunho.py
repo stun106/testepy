@@ -105,6 +105,7 @@
 #==========================================
 """Calculo vetorial usando FOR"""
 
+
 # vetor=1
 # number= int(input('Digite um numero: '))
 # for vetorial in range(number,1,-1):
@@ -167,43 +168,43 @@
 #     soma += s 
 # print(soma)
 
-while True:
-    sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']    
-    DaY= int(input('Dia de Nascimento: '))    
-    moUnTh = str(input('Mês de Nascimento: '))    
-    confirme = str(input('Digite "Y" para continuar: ')).lower()    
-    if confirme != 'y':       
-        print('Siga as instruções a cima!')    
-    elif DaY >= 21 and moUnTh == 'janeiro' or  moUnTh == 'fevereiro' and DaY <=18:        
-        print(sIgNoS[10])        
-        break    
-    elif DaY >= 19 and moUnTh == 'fevereiro' or moUnTh == 'março' and DaY <= 20:  
-        print(sIgNoS[11])       
-        break   
-    elif DaY >= 21 and moUnTh == 'março' or moUnTh == 'abril' and DaY <= 20:       
-        print(sIgNoS[0])  
-        break    
-    elif DaY >= 21 and moUnTh == 'abril' or moUnTh == 'maio' and DaY <= 20: 
-        print(sIgNoS[1])
-        break 
-    elif DaY >= 21 and moUnTh == 'junho' or moUnTh == 'julho' and DaY <= 22:
-        print(sIgNoS[3])       
-        break    
-    elif DaY >= 23 and moUnTh == 'julho' or moUnTh == 'agosto' and DaY <= 22:
-        print(sIgNoS[4])        
-        break    
-    elif DaY >= 23 and moUnTh == 'agosto' or moUnTh == 'setembro' and DaY <= 22:
-        print(sIgNoS[5])       
-        break    
-    elif DaY >= 23 and moUnTh == 'setembro' or moUnTh == 'outubro' and DaY <= 22:
-        print(sIgNoS[6]) 
-        break    
-    elif DaY >= 23 and moUnTh == 'outubro' or moUnTh == 'novembro' and DaY <= 21:
-        print(sIgNoS[7])       
-        break    
-    elif DaY >= 22 and moUnTh == 'novembro' or moUnTh == 'dezembro' and DaY <= 21:        
-        print(sIgNoS[8])        
-        break    
-    else:         
-        print(sIgNoS[9])        
-        break
+# while True:
+#     sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']    
+#     DaY= int(input('Dia de Nascimento: '))    
+#     moUnTh = str(input('Mês de Nascimento: '))    
+#     confirme = str(input('Digite "Y" para continuar: ')).lower()    
+#     if confirme != 'y':       
+#         print('Siga as instruções a cima!')    
+#     elif DaY >= 21 and moUnTh == 'janeiro' or  moUnTh == 'fevereiro' and DaY <=18:        
+#         print(sIgNoS[10])        
+#         break    
+#     elif DaY >= 19 and moUnTh == 'fevereiro' or moUnTh == 'março' and DaY <= 20:  
+#         print(sIgNoS[11])       
+#         break   
+#     elif DaY >= 21 and moUnTh == 'março' or moUnTh == 'abril' and DaY <= 20:       
+#         print(sIgNoS[0])  
+#         break    
+#     elif DaY >= 21 and moUnTh == 'abril' or moUnTh == 'maio' and DaY <= 20: 
+#         print(sIgNoS[1])
+#         break 
+#     elif DaY >= 21 and moUnTh == 'junho' or moUnTh == 'julho' and DaY <= 22:
+#         print(sIgNoS[3])       
+#         break    
+#     elif DaY >= 23 and moUnTh == 'julho' or moUnTh == 'agosto' and DaY <= 22:
+#         print(sIgNoS[4])        
+#         break    
+#     elif DaY >= 23 and moUnTh == 'agosto' or moUnTh == 'setembro' and DaY <= 22:
+#         print(sIgNoS[5])       
+#         break    
+#     elif DaY >= 23 and moUnTh == 'setembro' or moUnTh == 'outubro' and DaY <= 22:
+#         print(sIgNoS[6]) 
+#         break    
+#     elif DaY >= 23 and moUnTh == 'outubro' or moUnTh == 'novembro' and DaY <= 21:
+#         print(sIgNoS[7])       
+#         break    
+#     elif DaY >= 22 and moUnTh == 'novembro' or moUnTh == 'dezembro' and DaY <= 21:        
+#         print(sIgNoS[8])        
+#         break    
+#     else:         
+        # print(sIgNoS[9])        
+        # break

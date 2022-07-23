@@ -14,11 +14,12 @@
 #  - Aquário: de 21 janeiro a 18 fevereiro; 
 # - Peixes: de 19 fevereiro a 20 março.
 
+# OBS: O responsavel pela correção nao se ligou que em mes eu coloquei string de str, tbm nao liguei para implementar o programa e colocar uma condição para que se alguem colocasse numero inteiro em mes desse erro, mas minha logica esta correta referente a pergunta!
 
 while True:
     sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']    
     DaY= int(input('Dia de Nascimento: '))    
-    moUnTh = str(input('Mês de Nascimento: '))    
+    moUnTh = str(input('Mês de Nascimento: '))                         #<----- input typada de str 
     confirme = str(input('Digite "Y" para continuar: ')).lower()    
     if confirme != 'y':       
         print('Siga as instruções a cima!')    
@@ -55,3 +56,5 @@ while True:
     else:         
         print(sIgNoS[9])        
         break
+
+
