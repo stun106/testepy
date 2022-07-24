@@ -19,11 +19,12 @@ while True:
     'item' : item,
     'quant' : quant,
     }]
-    if confirm != 'y' and confirm != 'x':
-        print('Verifique seus dados')
-        continue
+    if confirm != 'y' and confirm != 'consulta':
+        print('siga as informações a cima!')
+    elif confirm == 'y':
+        print('Registrado.')
     else:
         break
 
-print(dados[0]['name'],'- ', dados[0]['cpf'])
-print(doaçoes[0]['item'],'- ',doaçoes[0]['quant'] )
+
+
