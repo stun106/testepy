@@ -14,7 +14,7 @@
 #  - Aquário: de 21 janeiro a 18 fevereiro; 
 # - Peixes: de 19 fevereiro a 20 março.
 
-# OBS: O responsavel pela correção nao se ligou que em mes eu coloquei string de str, tbm nao liguei para implementar o programa e colocar uma condição para que se alguem colocasse numero inteiro em mes desse erro, mas minha logica esta correta referente a pergunta!
+# OBS: O responsavel pela correção nao se ligou que eu typei o input correspondente a Mes no programa em "STR", tbm nao liguei para implementar o programa e colocar uma condição caso alguem colocasse um numero inteiro no input que corresponde ao mês, mas minha logica esta correta referente a pergunta!
 
 while True:
     sIgNoS = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']    
