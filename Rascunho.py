@@ -206,5 +206,25 @@
 #         print(sIgNoS[8])        
 #         break    
 #     else:         
-        # print(sIgNoS[9])        
-        # break
+#         print(sIgNoS[9])        
+#         break
+
+
+# primos = []
+# number1 = int(input('digite um numero: '))
+# number2 = int(input('digite outro numero: '))
+
+# for x in range(number1,number2+1):
+#     cont=0
+#     for y in range(number1,number2+1):
+#         if x % y == 0:
+#             cont+=1
+#     if cont == 2:
+#         primos.append(x)
+
+# print(primos)
+
+
+
+
+ 

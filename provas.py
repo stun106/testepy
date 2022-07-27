@@ -308,6 +308,30 @@ Saída
 2 3 5 7"""
 
 
+# primos=[]
+# number1 = int(input('digite um numero: '))
+# number2 = int(input('digite outro numero: '))
+# if number1<number2:
+#     for x in range(number1,number2+1):
+#         if x > 1:
+#             for i in range(2,x):
+#                 if x % i==0:
+#                     break 
+#             else: 
+#                 primos.append(x)
+#     print(primos)
+# else:
+#     for i in range(number2, number1+1):
+#         if i > 1:
+#             for i in range(2,i):
+#                 if i % i==0:
+#                     break 
+#         else: 
+#             primos.append(i)
+#     print(primos)
+
+
+
 
 '''questão 2'''
 
