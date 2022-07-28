@@ -353,21 +353,22 @@ Saída
 
 '''questao 3'''
 
-# direção = 0
-# while True:
-#     direction = input('Digite a direção que o carro irá percorrer: ')
-#     if direction == 'direita':
-#         direção+=1
-#     elif direction == 'esquerda':
-#         direção+=1
-#     elif direction == 'frente':
-#         direção+=1
-#     elif direction == 'parar':
-#         break
-#     else:
-#         print('verifique seus dados')
+direção = 0
+while True:
+    direction = input('Digite a direção que o carro irá percorrer: ')
+    if direction == 'direita':
+        direção+=1
+    elif direction == 'esquerda':
+        direção+=1
+    elif direction == 'frente':
+        direção+=1
+    elif direction == 'parar':
+        direção+=1
+        break
+    else:
+        print('verifique seus dados')
 
-# print(f'{direção/100} KM')
+print(f'{direção/100} KM')
 
 
   
