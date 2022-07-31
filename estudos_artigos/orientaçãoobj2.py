@@ -10,13 +10,14 @@
 
 
 class ContasBancarias:
-
+    extrato = []
     def __init__(self, Conta,Agencia, Correntista,Tipo):
         self.Depositar = Conta
         self.Correntista = Correntista
         self.Saldo = 0
         self.Tipo = Tipo
         self.Agencia = Agencia
+        self.extrato
 
     def verificador(self,a,b = 'y'):
         if a == b:
@@ -26,7 +27,17 @@ class ContasBancarias:
 
     def depositar(self,Valor):
         self.Saldo+=Valor
+        self.extrato.append(self.Saldo)
         return MinhaConta.Saldo
+    
+    def sacar(self,Valor):
+        if self.Saldo >= Valor:
+            self.Saldo-=Valor
+            self.extrato.append(1*-self.Saldo)
+            return MinhaConta.Saldo
+        else: 
+            return('Saldo insuficiente para Saque.')
+        
 
 
 cc = input('informe sua conta: ')
@@ -41,10 +52,19 @@ print(f'''Bem vindo ao banco {MinhaConta.Correntista},
 
 
 podeDepositar = input('deseja depositar? digite [Y/N] Sim ou Não:')
-Dep = float(input('Digite o Valor do deposito: '))
 if(MinhaConta.verificador(podeDepositar) == True):
+    Dep = float(input('Digite o Valor do deposito: '))
     MinhaConta.depositar(Dep)
-    print(MinhaConta.Saldo)
+    print(f'Deposito no valor de R$ {MinhaConta.Saldo} bem sucedido')
+
+
+podeSacar = input('deseja sacar? digite [Y/N] Sim ou Não:')
+Sac = float(input('digite o valor do seu saque: '))
+if(MinhaConta.verificador(podeSacar) == True):
+    MinhaConta.sacar(Sac)
+    print(f'Você retirou R$ {Sac} da sua conta')
+    print(f'Saldo atual: R$ {MinhaConta.Saldo}')
+
 
 
 
