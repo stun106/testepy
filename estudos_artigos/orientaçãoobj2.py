@@ -38,17 +38,16 @@ class ContasBancarias:
         else: 
             return('Saldo insuficiente para Saque.')
 
-        
-
 
 cc = input('informe sua conta: ')
 ag = input('informe a agencia: ')
 Prop = input('informe o nome do Correntista: ')
 tipo = input('informe o tipo da conta: ')
 
+
 MinhaConta = ContasBancarias(cc,ag,Prop,tipo)
 print(f'''Bem vindo ao banco {MinhaConta.Correntista},
-        seu Saldo é {MinhaConta.Saldo}
+            seu Saldo é {MinhaConta.Saldo}
         ''')
 
 
@@ -69,6 +68,7 @@ if(MinhaConta.verificador(podeSacar) == True):
 tirarExtrato = input('deseja consultar o extrato? digite [Y/N] Sim ou Não:')
 if(MinhaConta.verificador(tirarExtrato) == True):
     print(MinhaConta.extrato)
+
     
 
 
