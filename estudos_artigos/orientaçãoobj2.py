@@ -38,7 +38,6 @@ class ContasBancarias:
         else: 
             return('Saldo insuficiente para Saque.')
 
-
 cc = input('informe sua conta: ')
 ag = input('informe a agencia: ')
 Prop = input('informe o nome do Correntista: ')
