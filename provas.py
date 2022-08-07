@@ -400,8 +400,96 @@ Saída   -> XV'''
 # TransformRoman(sec)
       
 
+''' [PT-A03] Crie uma classe para armazenar as informações de um computador. O computador deve ter os seguntes atributos:
+-Modelo
+-Fabricante
+-Processador
+-Tamanho do HD
+Espaço ocupado do HD
+Esta ligado?
+
+Sua classe tambem deve ter os seguintes métodos:
+-Liga() -> altes o status de esta ligado para true
+-Desligar() -> altera o status de esta ligado para false
+-LimparHD() -> recebe por paramentro o tamanho do espaço que deseja limpar o hd
+-OcuparHD() -> recebe por paramentro o tamanho do espaço que deseja ocupar o hd
+ '''
 
 
+
+from time import sleep
+
+
+
+
+Ocuped =[{'windows':5000}] 
+class hardware:
+                
+        def __init__(self,Modelo,Fabricante,Processador,HD):
+                self.Modelo = Modelo
+                self.Fabricante = Fabricante
+                self.Processador = Processador
+                self.HD = HD
+                self.Disk_user = 5000#GB <--- Padrão de fabrica
+                # self.Ligado_Desligado = ''
+
+        def Ligar(self,a,b = 'y'):    
+                if a == b:
+                        True
+                else:
+                        False
+
+
+        def enginer (self):
+                a=''
+                return a
+
+        
+        def Saudação (self):
+                return ('''
+                        Loanding ...
+                Welcome to the Jungle! ''')
+
+
+        def Instalar (self,tamanho):
+              if self.Disk_user > tamanho:
+                self.Disk_user += tamanho
+                Ocuped.append(self.Disk_user)
+                
+
+
+#-------------------------------------------------------
+model = input('Informe o modelo: ')
+factory = input('Informe o fabricante ')
+processor = input('informe o processador: ')
+Disk = input('informorme a capacidade do hd: ')
+meuComputador = hardware(model,factory,processor,Disk)
+print(f'seu {meuComputador.Modelo} tem um processador {meuComputador.Processador}')
+
+
+podeligar = input('Quer ligar o Computador? digite [Y/N] Sim ou Nao: ')
+if meuComputador.Ligar(podeligar) == True:
+        sys = input('oque deseja fazer?')
+        # print('='*50,meuComputador.Saudação())
+        # sleep(0.5)
+        # print('Oque você deseja fazer? ')
+        # print('''      [1]        [2]        [3]
+        #           INSTALAR   REMOVER     DESLIGAR ''')
+        # sleep(1.0)
+       
+
+
+
+        
+
+
+        
+
+
+
+
+
+                
 
 
 
