@@ -272,24 +272,6 @@
 
 
 
-       
-
-def eae ():
-    Kmh = 0
-    while Kmh < 120:
-        Kmh += 1
-        print(Kmh) 
-    if(Kmh < 60):
-        return ('gear 5')
-    elif (Kmh < 60):
-        return ('gear 4')
-    elif (Kmh < 45):   
-        return ('gear 3') 
-    elif(Kmh < 30):  
-        return ('gear 2') 
-    else:    
-        return ('gear 1') 
-            
 
 
-print(eae())
+
