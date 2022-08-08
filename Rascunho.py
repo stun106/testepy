@@ -274,4 +274,5 @@
 
 
 
-
+r = input('')
+print(r)
