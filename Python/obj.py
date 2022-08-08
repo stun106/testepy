@@ -54,7 +54,8 @@ class Hardware:
         if self._Disk_user == 0:
             return self.discorigido
         else:
-           self.discorigido -= self.Ocuped[softwares]
+            
+           self.discorigido -= sum(self.Ocuped.values())
         return self.discorigido
 
     # metodos p/ verificar condições
