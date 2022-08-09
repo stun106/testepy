@@ -97,7 +97,7 @@ while True:
     print('\033[1;32m INSTRUÇÕES >\033[0;0m Com o comando "windows" ou "linox" instale o sistema operacional\nNão esqueça os "drivers" nem o "vscode" e comece estudar!.\n')
     print('    [1]INSTALAR\n\n    [2]DESISTALAR\n\n    [3]DESLIGAR')
     print('-'*50)   
-    question = int(input('Utilize os numeros para seguir as instruções:'))
+    question = int(input('\033[1;42m Utilize os numeros para seguir as instruções:  \033[0;0m'))
     if (MyComputer.Verificador(question) == 1): 
         print('\n')
         softwares = input('informe o nome do arquivo: ')
