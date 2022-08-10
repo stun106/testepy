@@ -267,11 +267,12 @@
 # TransformRoman(sec)
 
 
-
-d = {'A': 1, 'B': 2, 'C': 3}
-total = sum(d.values())
- 
-print(total)
+l = [1,2,3,4]
+o = 0
+for x in l:
+    o += x
+print(o)
+    
 
 
 
