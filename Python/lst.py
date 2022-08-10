@@ -12,6 +12,7 @@ class Asteroides:
         self.distancia3 = []
         self.distancia4 = []
         self.distancia5 = []
+        self.distancias = []
         self.DadosObj = {}
         self.Media_D = 0
         
@@ -41,8 +42,13 @@ class Asteroides:
     #     return self.DadosObj
 
     def MediaPart1(self):
-        for x in self.distancias:
-            self.Media_D += x
+        self.distancias.append(self.distancia1)
+        self.distancias.append(self.distancia2)
+        self.distancias.append(self.distancia3)
+        self.distancias.append(self.distancia4)
+        self.distancias.append(self.distancia5)
+        for x in list(self.distancias):
+            self.Media_D = self.Media_D + x
         return self.Media_D
     def MediaPart2(self):
             self.Media_D /= 2
@@ -81,6 +87,8 @@ while True:
     if ProgrammingObj.verificador(Question) == True:
         pass
     else:  
+        ProgrammingObj.MediaPart1()
+        ProgrammingObj.MediaPart2()
         print(f'{ProgrammingObj.DadosObj}, media: {ProgrammingObj.Media_D}')
     
 
