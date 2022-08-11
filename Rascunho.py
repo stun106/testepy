@@ -267,12 +267,15 @@
 # TransformRoman(sec)
 
 
-l = [1,2,3,4]
-o = 0
-for x in l:
-    o += x
-print(o)
+
     
+
+
+
+
+lista = [1,2,5,1,6]
+print(sum(lista))
+
 
 
 
