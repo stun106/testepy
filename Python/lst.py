@@ -1,6 +1,8 @@
 '''[PT-A02] A NASA (Agência Espacial dos Estados Unidos) mantém um registro de todos os asteroides e suas distâncias relativas à Terra. Você foi convidado para escrever um programa que leia o nome do asteroide e uma lista das suas últimas 5 distâncias da Terra. Armazene os dados em um dicionário, onde a chave é o nome do asteroide. Exiba no final a distância média de todos os asteroides registrados.'''
         
 
+
+
 class Asteroides: 
     
     def __init__(self):
@@ -9,6 +11,7 @@ class Asteroides:
         self.distancia3 = []
         self.distancia4 = []
         self.distancia5 = []
+        self.contador_M = 0
         self.Media_D = 0
         self.DadosObj = {}
         
@@ -35,16 +38,19 @@ class Asteroides:
         self.DadosObj[Registro] = self.distancia5
         return self.DadosObj
 
-    def MediaPart1(self):
+
+
+    def MediaPart1(self)->float:
         self.Media_D += sum(self.distancia1)
         self.Media_D += sum(self.distancia2)
         self.Media_D += sum(self.distancia3)
         self.Media_D += sum(self.distancia4)
         self.Media_D += sum(self.distancia5)
         return self.Media_D
+
     def MediaPart2(self):
-            self.Media_D /= 5
-            return self.Media_D
+        self.Media_D /= len(self.DadosObj.values())
+        return self.Media_D
 
 
     def verificador(self,a,b='y'):
@@ -62,7 +68,7 @@ while True:
     print('\033[1;42m A NASA (Agência Espacial dos Estados Unidos) \033[0;0m \n')
 
     Registro = input('informe o nome de registro do asteroide: ')
-    for Distancia1 in range(1,5+1):
+    for Distancia1 in range(1,2+1):
         Distancia1 = float(input('Informe suas 5 distancias relativa individualmente  sob a terra: '))
         ProgrammingObj.Add_obj1()
     Question = input('Deseja continuar registrando? [Y/N]: ')
@@ -73,7 +79,7 @@ while True:
         
         
     Registro = input('informe o nome de registro do asteroide: ') 
-    for Distancia2 in range(1,5+1):
+    for Distancia2 in range(1,2+1):
         Distancia2 = float(input('Informe suas 5 distancias relativa individualmente  sob a terra: '))
         ProgrammingObj.Add_obj2()
     Question = input('Deseja continuar registrando? [Y/N]: ')

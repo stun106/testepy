@@ -271,10 +271,21 @@
     
 
 
+dic = {
+    'um':[1,1,2,1,1], 
+    'dois':[2,2,2,2,2], 
+    'tres':[3,3,3,3,3], 
+    'quatro':[4,4,4,4,4], 
+}
 
+def soma(l:list) -> float:
+    soma = 0
+    for i in l:
+        soma += i
+    return soma
 
-lista = [1,2,5,1,6]
-print(sum(lista))
+for i in dic.values():
+    print( soma(i)/len(i) )
 
 
 

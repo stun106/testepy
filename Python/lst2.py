@@ -4,10 +4,14 @@
 
 
 
+
+
+
 class Asteroides: 
     
     def __init__(self):
         self.Registro = ''
+        self.contador = 0
         self.distancia = [] 
         self.Media_D = 0
         self.DadosObj = {}
@@ -16,19 +20,32 @@ class Asteroides:
         self.Registro = input('informe o nome de registro do asteroide: ')
         return self.Registro
     
+
+
+
   
     def Add_obj1(self):
         self.distancia.append(Distancia)
         self.DadosObj[self.Registro] = self.distancia
         return self.DadosObj
-
-
-    def MediaPart1(self):
+    
+    def soma(self:list) -> float:
         self.Media_D += sum(self.distancia)
         return self.Media_D
-    def MediaPart2(self):
-            self.Media_D /= 5
-            return self.Media_D
+
+    def media(self):
+        for i in range (len(self.distancia)):
+         self.Media_D /= i
+         return self.Media_D
+
+         
+
+    # def MediaPart1(self):
+    #     self.Media_D += sum(self.distancia)
+    #     return self.Media_D
+    # def MediaPart2(self):
+    #         self.Media_D /= self.contador
+    #         return self.Media_D
 
 
     def verificador(self,a,b='y'):
@@ -51,7 +68,10 @@ while True:
     if ProgrammingObj.verificador(Question) == True:
        pass
     else:  
-        ProgrammingObj.MediaPart1()
-        ProgrammingObj.MediaPart2()
-        print(f'{ProgrammingObj.DadosObj}, media: {ProgrammingObj.Media_D}')
+        ProgrammingObj.soma()
+        ProgrammingObj.media()
+        print(ProgrammingObj.DadosObj,ProgrammingObj.Media_D)
+        # ProgrammingObj.MediaPart1()
+        # ProgrammingObj.MediaPart2()
+        # print(f'{ProgrammingObj.DadosObj}, media: {ProgrammingObj.Media_D}')
         
