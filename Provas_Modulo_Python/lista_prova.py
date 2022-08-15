@@ -32,11 +32,12 @@ class Asteroides:
 
 ProgrammingObj = Asteroides()
 
-Question = 'y'
+
 print('\033[1;42m A NASA (Agência Espacial dos Estados Unidos) \033[0;0m \n')
 while True:
+    print('-'*50)
     ProgrammingObj.register()
-    for Distancia in range(1,5+1):
+    for Distancia in range(1,2+1):
         Distancia = float(input('Informe suas 5 distancias relativa individualmente sob a terra: '))
         ProgrammingObj.Add_obj1()
     Question = input('Deseja continuar registrando? [Y/N]: ')
@@ -44,6 +45,10 @@ while True:
        pass
     else:  
         ProgrammingObj.SomaparaMedia()
+        print('='*50)
         print(f'{ProgrammingObj.DadosObj.keys()},{ProgrammingObj.distancia}, distância média de todos os asteroides registrados {ProgrammingObj.Media_D/len(ProgrammingObj.distancia)}')
+        print('='*50)
+        ProgrammingObj.distancia = []
+        ProgrammingObj.DadosObj = {}
 
         
