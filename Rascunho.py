@@ -271,22 +271,13 @@
     
 
 
-dic = {
-    'um':[1,1,2,1,1], 
-    'dois':[2,2,2,2,2], 
-    'tres':[3,3,3,3,3], 
-    'quatro':[4,4,4,4,4], 
-}
-
-def soma(l:list) -> float:
-    soma = 0
-    for i in l:
-        soma += i
-    return soma
-
-for i in dic.values():
-    print( soma(i)/len(i) )
 
 
+
+from random import randint
+
+
+x = [randint(0,100) for x in range(0,4)]
+print(x)
 
 
