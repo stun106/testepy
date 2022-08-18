@@ -273,11 +273,6 @@
 
 
 
-
-from random import randint
-
-
-x = [randint(0,100) for x in range(0,4)]
-print(x)
-
+cont = 0 
+while 
 
