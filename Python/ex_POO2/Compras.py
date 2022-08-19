@@ -1,5 +1,5 @@
 from supermercado import Systemercado
-from cliente import Cliente
+from carrinhodecompra import CarrinhoDeCompras
 
 Mercado = Systemercado()
 
@@ -13,5 +13,11 @@ while True:
         endereço = str(input('informe seu endereço: '))
         Mercado.Cadastro(Name,cpf,endereço)
         print(Mercado.Pessoa.pessoa)
+        carrinho = CarrinhoDeCompras()
+        print(Mercado.produtospreços)
+        Pedido = input('adicione no carrinho suas compras: ')
+        carrinho.addCarrinho(Pedido)
+        print(carrinho.Carrinho)
+    
 
 
