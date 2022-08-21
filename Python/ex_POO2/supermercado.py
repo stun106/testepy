@@ -1,31 +1,34 @@
 from cliente import Cliente
-class Systemercado:
+class Systemercado(Cliente):
     def __init__(self,Vip = False):
+        Cliente. __init__(self,Vip)
         self.produtospreços = {
-            'Feijão': 10.50,
-            'Arroz': 5.80,
-            'frango': 18.80
+        'Feijão': 10,
+            'Arroz': 5,
+            'frango': 18
             }
-        self. Pessoa = Cliente(Vip)
-
-
+        
     def Cadastro(self,n:str,c:str,en:str):
-        self.Pessoa.pessoa['Nome: '] = n 
-        self.Pessoa.pessoa['CPF: '] = c 
-        self.Pessoa.pessoa['Endereço: '] = en
-        return self.Pessoa.pessoa
+        self.pessoa['Nome: '] = n 
+        self.pessoa['CPF: '] = c 
+        self.pessoa['Endereço: '] = en
+        return self.pessoa    
 
-    def ClienteVip (self,a, b='y'):
+    def ClienteVip (self,a,b ='y')->bool:
         if a == b:
-            print('otimo, para clientes VIP a compra terá 10% de desconto.')
             return True
         else:
             return False
 
+    def resetsystem(self):
+        self.pessoa = {}
+        self.produtospreços = {}
+        self.Carrinho = []
+        self.item_valor = []
+        self.valor = 0
         
         
 
-        
         
 
 

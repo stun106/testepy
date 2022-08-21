@@ -4,5 +4,6 @@ Em seguida, crie os métodos para adicionar produtos ao carrinho e o exibir tota
 class Cliente: 
     def __init__(self,Vip = False):
         self.pessoa = {}
-        self.idade = []
         self.Vip = Vip
+
+

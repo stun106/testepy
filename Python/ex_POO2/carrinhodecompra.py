@@ -1,21 +1,40 @@
+from multiprocessing.connection import Client
 from supermercado import Systemercado
-class CarrinhoDeCompras: 
+class CarrinhoDeCompras(Systemercado): 
     
     def __init__(self):
+        Systemercado. __init__(self)
         self.Carrinho = []
-        self.Mercadinho = Systemercado()
+        self.item_valor = []
         self.valor = 0
 
     def addCarrinho(self,a:str)->list:
-        print(self.Mercadinho.produtospreços)
         self.Carrinho.append(a)
+    
+    def Desconto(self):
+        self.valor -= (10/100)
 
-    def Compra(self,a:str)->float:
-      sum(self.Mercadinho.produtospreços.values(a))  
-      return self.valor
+    def Compra(self,a,y,x ='y'):
+        if y == x:
+            self.item_valor.append(self.produtospreços.pop(a))
+            for x in self.item_valor:
+                self.valor += x 
+            self.Desconto()
+            return self.valor
+        else:
+            self.item_valor.append(self.produtospreços.pop(a))
+            for x in self.item_valor:
+                self.valor += x 
+            return self.valor
+
 
         
+
+
+
+
         
+    
 
     
         
