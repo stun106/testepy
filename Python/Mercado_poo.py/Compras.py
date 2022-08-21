@@ -38,7 +38,7 @@ while True:
             if Mercado.ClienteVip(question) == False:
                 print(carrinho.Carrinho)
                 print(f'Valor de sua compra: \033[1;32m{carrinho.Compra(Pedido,question)} R$\033[0;0m')
-                Mercado.resetsystem()
+                carrinho.resetsystem()
         
             
              

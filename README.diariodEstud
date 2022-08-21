@@ -29,7 +29,17 @@ Diario de estudos:
     Parei de registrar meu progresso pela correria do dia a dia, trabalho casa e estudos tem sido minha rotida ultimamente de segunda a domingo sendo que aos domingos
     só descanço e estudo. 
     no ultimo registro estava aprendendo algumas funções e metodos para manipular listas e fazer operações com seus valores, estava no modulo do curso de logica de
-    programação, graças ao professor Rafael Nunes, não estou com problemas para entender "POO", a base em logica foi forte agradeço de verdade a esse cara!
-    Novo professor, novo modulo, eu disse que nao tive problemas para entender "POO" realmente n tive mas o professor Vinicios teve que ter paciencia pq as 4 da manha
+    programação, não estou com problemas para entender os conceitos e praticas de POO, a base em logica foi forte!
+    Novo professor, novo modulo, eu disse que nao tive problemas para entender POO realmente n tive mas o professor Vinicios teve que ter paciencia pq as 4 da manha
     estava eu tentando resolver por exemplo; porque nao conseguia validar uma condição usando um método kkkk, grande professor Vinicios so agradeço tbm!
     Enfim, as coisas estão acontecendo acho que deu pra resumir bem como foram meus dias ausentes, amanha estarei aqui mais uma vez registrando minha caminhada.
+
+---------------------------------------------------------------------------------------------------------------
+
+21/08/2022
+
+aprendizado de hoje: 
+    - Reformular e implementar o codigo estudado na aula passada sobre heranças. 
+    - Objetivo: implementar com novas classes e metodos um jogo de rpg estilo D&D.
+    - Usarei metodos como RollDice() para usar condições contra ou a favor do usuario.
+    - Ultilizar conceitos S.O.L.I.D

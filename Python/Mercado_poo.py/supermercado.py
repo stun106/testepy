@@ -25,9 +25,7 @@ class Systemercado(Cliente):
         self.produtospreços = {}
         self.Carrinho = []
         self.item_valor = []
-        self.valor = 0
-        
-        
+        self.valor = 0   
 
         
 
