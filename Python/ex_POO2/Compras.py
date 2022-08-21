@@ -13,7 +13,7 @@ while True:
         endereço = str(input('informe seu endereço: '))
         Mercado.Cadastro(Name,cpf,endereço)
         print(Mercado.Pessoa.pessoa)
-        carrinho = CarrinhoDeCompras()
+        carrinho = CarrinhoDeCompras()   
         print(Mercado.produtospreços)
         Pedido = input('adicione no carrinho suas compras: ')
         carrinho.addCarrinho(Pedido)
