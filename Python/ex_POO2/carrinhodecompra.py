@@ -1,9 +1,7 @@
-from multiprocessing.connection import Client
 from supermercado import Systemercado
-class CarrinhoDeCompras(Systemercado): 
+class CarrinhoDeCompras(): 
     
     def __init__(self):
-        Systemercado. __init__(self)
         self.Carrinho = []
         self.item_valor = []
         self.valor = 0
