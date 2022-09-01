@@ -277,7 +277,8 @@
 # #     hr += 1   
 # # print(hr)
 
-
-
+entrada = [8.]
+saida = 22.30
 for i in entrada:
-
+    saida -= i
+print(saida)

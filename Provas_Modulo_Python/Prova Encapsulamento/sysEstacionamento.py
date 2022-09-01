@@ -3,8 +3,8 @@ class sysEstacionamento(Registro):
     def __init__(self):
         Registro.__init__(self)
         self.__valorporHora = 5.0
-        self.__Entrada = []
-        self.__Saida = 0
+        self.__Entrada = [8.5]
+        self.__Saida = 22.40
         self.__Dados = {}
         
 
@@ -30,7 +30,15 @@ class sysEstacionamento(Registro):
         self.__Saida += b
         return self.__Saida
 
-    
+    #Metodos systema de valores
+    def sysCobranca(self):
+            for i in self.__Entrada:
+                self.__Saida -= i
+                return int(self.__Saida * self.__valorporHora)
+            # else: 
+            #     return('"Informação incoerente", verifique seus dados!')
+
+            
     #Metodos valores
     @property
     def Entrada(self):

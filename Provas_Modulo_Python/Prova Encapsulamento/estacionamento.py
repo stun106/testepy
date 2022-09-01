@@ -15,9 +15,6 @@ sys = sysEstacionamento()
     # placa = input('informe a placa do veiculo: ')
 sys.Dados()
 entradaInfo = float(input('Horario da entrada ex(8.30): '))
-
 saidaInfo = float(input('Horario de saida, Ex(13.00): '))
-
-if entradaInfo < saidaInfo:
-    print (f'{sys.Dados()}\n{date.today()} - Entrada:{sys.addEntrada(entradaInfo)} Saida:{sys.addSaida(saidaInfo)}')
+print (f'{sys.Dados()}\n{date.today()} - Entrada:{sys.addEntrada(entradaInfo)} Saida:{sys.addSaida(saidaInfo)}\nValor:')
 
