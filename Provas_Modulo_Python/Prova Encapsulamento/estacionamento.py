@@ -1,75 +1,23 @@
-from datetime import datetime
-from Registro import Registro
-class estacionamento(Registro):
-    def __init__(self):
-        Registro.__init__(self)
-        self.__valorporHora = 5.0
-        self.__Entrada = 0
-        self.__Saida = 0
-        self.__Dados = {}
-        
+from datetime import date
+from sysEstacionamento import sysEstacionamento
+sys = sysEstacionamento()
 
-    
-    #metodo importar dados
-    @property
-    def Dados(self):
-        return self.__Dados
-    Dados.setter
-    def Dados(self):
-        self.__Dados[self.Name] = self.Cpf
-        self.__Dados[self.Automovel] = self.Modelo
-        self.__Dados['Placa'] = self.placa
-        self.__Dados['Entrada'] = self.__Entrada
-        self.__Dados['Saida'] = self.__Saida
-        return self.__Dados
-    
-    
-    #metodos para importar entrada e saida de automoveis
-    def addEntrada(self,a:float) -> float:
-        self.__Entrada += a
-        return self.__Entrada
-    
-    def addSaida(self,b:float) -> float:
-        self.__Saida += b
-        return self.__Saida
+# while True:
+#     print('='*50)
+#     print('\n')
+#     print('Salvador Shopping Pay Parking')
+#     print('\n')
+#     print('='*50)
+    # nameInfo = input('informe seu nome: ')
+    # cpfInfo = input('Informe seu cpf: ')
+    # typeAuto = input('informe o tipo do veiculo, ex (moto, caminhão) : ')
+    # modelo = input('informe o modelo do veiculo: ')
+    # placa = input('informe a placa do veiculo: ')
+sys.Dados()
+entradaInfo = float(input('Horario da entrada ex(8.30): '))
 
-    
-    #Metodos valores
-    @property
-    def Entrada(self):
-        return self.__Entrada
-    @Entrada.setter
-    def Entrada(self,a):
-        self.verificador(a)
-        return self.__Entrada
+saidaInfo = float(input('Horario de saida, Ex(13.00): '))
 
-    @property
-    def Saida(self):
-        return self.__Saida
-    @Saida.setter
-    def Saida(self,a):
-        self.verificador(a)
-        return self.__Saida 
-
-    
-
-
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-
-
-    
-    
-
+if entradaInfo < saidaInfo:
+    print (f'{sys.Dados()}\n{date.today()} - Entrada:{sys.addEntrada(entradaInfo)} Saida:{sys.addSaida(saidaInfo)}')
 

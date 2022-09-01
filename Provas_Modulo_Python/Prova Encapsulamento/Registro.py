@@ -10,11 +10,7 @@ class Registro:
         self.placa = 'oko3518'
         
 
-    def verificador(self,a:bool,b = 'y') -> bool:
-        if a == b: 
-            return True
-        else:
-            return ('verifique seus dados!')
+
 
 
 

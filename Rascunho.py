@@ -269,9 +269,15 @@
 
 
     
+# horas = 
+# entrada = int(input('informe: '))
+# saida = int(input('informe: '))
+# # duração = 0
+# # while entrada < saida:
+# #     hr += 1   
+# # print(hr)
 
 
-from datetime import datetime
 
+for i in entrada:
 
-datetime.time(22,00)

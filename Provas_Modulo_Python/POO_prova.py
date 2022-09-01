@@ -23,7 +23,7 @@ class Hardware:
         self.Fabricante = Fabricante
         self.Processador = Processador
         self.discorigido = diskc
-        self._Disk_user = 0        
+        self._Disk_user = 0     
         self.Ocuped
 
                 # objetos e classes
@@ -50,11 +50,12 @@ class Hardware:
             self.Ocuped[software] = t_Arquivo
             return self.Ocuped
 
-    def hdvalue (self,):
+    def hdvalue (self,a):
         if self._Disk_user == 0:
             return self.discorigido
         else:  
-           self.discorigido -= sum(self.Ocuped.values())
+            self.discorigido = a
+            self.discorigido -= sum(self.Ocuped.values())
         return self.discorigido
 
     # metodos p/ verificar condições
@@ -63,7 +64,8 @@ class Hardware:
             return True
         else:
             return False
-    def Verificador (self, a,b = int(1)):
+
+    def Verificador (self, a,b = 1):
         if a == b:
             return True
         else:
@@ -115,5 +117,5 @@ while True:
         unis_arqv = input('Informe o item a ser Desistalado: ')
         MyComputer.Uninstaler(unis_arqv)
         print(f'\033[1;31m {unis_arqv} \033[0;0m Desinstalado com sucesso!\nDisco Local > C: {MyComputer.Ocuped}')
-        print(f'Espaço Livre:\033[1;32m {MyComputer.hdvalue()} \033[0;0m')
+        print(f'Espaço Livre:\033[1;32m {MyComputer.hdvalue(Disk)} \033[0;0m')
         print('-'*50) 
