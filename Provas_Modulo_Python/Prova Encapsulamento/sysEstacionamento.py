@@ -1,14 +1,13 @@
 from Registro import Registro
 class sysEstacionamento(Registro):
-    def __init__(self):
-        Registro.__init__(self)
-        self.__valorporHora = 5.0
-        self.__Entrada = [8.5]
-        self.__Saida = 22.40
+    def __init__(self,name,cpf,tipoauto,model,placa):
+        Registro.__init__(self,name,cpf,tipoauto,model,placa)
         self.__Dados = {}
+        self.__Entrada = []
+        self.__Saida = 0
+        self.__valorporHora = 5.0
+        self.__valor = 0
         
-
-    
     #metodo importar dados
     @property
     def Dados(self):
@@ -19,27 +18,8 @@ class sysEstacionamento(Registro):
         self.__Dados[self.Automovel] = self.Modelo
         self.__Dados['Placa'] = self.placa
         return self.__Dados
-    
-    
-    #metodos para importar horarios de entrada e saida de automoveis
-    def addEntrada(self,a:float) -> float:
-        self.__Entrada.append(a)
-        return self.__Entrada
-    
-    def addSaida(self,b:float) -> float:
-        self.__Saida += b
-        return self.__Saida
 
-    #Metodos systema de valores
-    def sysCobranca(self):
-            for i in self.__Entrada:
-                self.__Saida -= i
-                return int(self.__Saida * self.__valorporHora)
-            # else: 
-            #     return('"Informação incoerente", verifique seus dados!')
-
-            
-    #Metodos valores
+     #Metodos valores
     @property
     def Entrada(self):
         return self.__Entrada
@@ -56,15 +36,43 @@ class sysEstacionamento(Registro):
         self.__verificador(a)
         return self.__Saida 
 
+    #metodos para importar horarios de entrada e saida de automoveis
+    def addEntrada(self,a:float) -> float:
+        self.__Entrada.append(a)
+        return self.__Entrada
     
+    def addSaida(self,b:float) -> float:
+        self.__Saida += b
+        return self.__Saida
+
+    #Metodos systema de cobrança
+    def sysCobranca(self,a:float,b:float) -> int:
+        if a < b:
+            for i in (self.__Entrada):
+                self.__Saida -= i
+                self.__valor += self.__Saida
+                return int(round(self.__valor* self.__valorporHora))
+            self.__resetsys()
+        else: 
+            return('"Informação incoerente", verifique seus dados!')
+        
+
+    """metodos verificadores"""
+
     #metodo verificador do sistema de estacionamento
-    def __verificador(self,a:bool,b = 'y') -> bool:
+    def verificador(self,a:bool,b = 'y') -> bool:
         if a == b: 
             return True
         else:
-            return ('verifique seus dados!')
+            return False
     
-    
+    #reseta atributos para novos registros
+    def __resetsys(self)-> None:
+        self.__Dados = {}
+        self.__Entrada = []
+        self.__Saida = 0
+        self.__valorporHora = 5.0
+        self.__valor = 0
 
     
     

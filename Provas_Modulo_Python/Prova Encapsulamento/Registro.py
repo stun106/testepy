@@ -2,25 +2,15 @@
 
 
 class Registro:
-    def __init__(self):
-        self.Name = 'José Antonio'
-        self.Cpf = '43815010'
-        self.Automovel = 'caminhonete'
-        self.Modelo = 'Strada Work 1.4 fire'
-        self.placa = 'oko3518'
+    def __init__(self,name,cpf,tipoauto,model,placa):
+        self.Name = name
+        self.Cpf = cpf
+        self.Automovel = tipoauto
+        self.Modelo = model
+        self.placa = placa
         
 
 
 
 
-
-    
-
-# register = Registro()
-# question = input('press "Y": ')
-# if register.verificador(question) == True:
-#     register.Dados = question
-#     print(register.Dados)
-# else:
-#     print(register.verificador(question))
         
