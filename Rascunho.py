@@ -277,8 +277,32 @@
 # #     hr += 1   
 # # print(hr)
 
-entrada = [8.20]
-saida = (22.10)
-for i in entrada:
-    saida -= i
-print(round(saida))
+# entrada = [8.20]
+# saida = (22.10)
+# for i in entrada:
+#     saida -= i
+# print(round(saida)
+
+
+def addcpf(a):
+    a = ''
+    while len(a) == 11:
+        a = ''
+    return a
+
+    
+
+cpf = str(input('informe seu cpf: '))    
+addcpf(cpf)
+
+# while len(cpf) < 4:
+#     cpf = str(input('Erro, informe apenas as informaçoes corretas: '))
+# print(f'cpf registrado {cpf}')
+    
+
+
+
+
+
+
+    

@@ -24,17 +24,17 @@ class sysEstacionamento(Registro):
     def Entrada(self):
         return self.__Entrada
     @Entrada.setter
-    def Entrada(self,a):
-        self.__verificador(a)
-        return self.__Entrada
+    def Entrada(self):
+        if self.__Entrada[0] < self.__Saida:
+            return self.__Entrada
 
     @property
     def Saida(self):
         return self.__Saida
     @Saida.setter
-    def Saida(self,a):
-        self.__verificador(a)
-        return self.__Saida 
+    def Saida(self,a,b ='y'):
+        if a == b:
+            return self.__Saida 
 
     #metodos para importar horarios de entrada e saida de automoveis
     def addEntrada(self,a:float) -> float:
