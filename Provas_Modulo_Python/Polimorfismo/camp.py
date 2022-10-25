@@ -24,6 +24,7 @@ class Camp:
         self.premio += premio
         self.Patrocinadores = patro
         self.Atletas = atleta
+        print('Dados Persistidos com sucesso')
     
     def select(self,nome,local,premio,patro,atleta):
         self.insert(nome,local,premio,patro,atleta)
@@ -32,7 +33,7 @@ class Camp:
         self.dadoscamp['Premiação'] = self.premio
         self.dadoscamp['Patrocinadores'] = self.Patrocinadores
         self.dadoscamp['Atletas'] = self.Atletas
-        print('Registro concluido')
+        
 
 
 

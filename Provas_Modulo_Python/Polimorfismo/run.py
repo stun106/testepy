@@ -61,7 +61,7 @@ categoria = 'Profissional'
 pontos = 45.5
 atletasp2.select(atleta,idade,categoria,pontos)
 print(atletasp2.dadoscamp)
-
+    #p/ teste
 atletasL3 = Lendas()
 atleta =  'Paladino Mascarado'
 idade = 55

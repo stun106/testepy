@@ -13,6 +13,7 @@ class Lendas(Camp):
         self.IdadeL.append(idade)
         self.CategoriaL = categoria
         self.PontuacaoL.append(pontos)
+        
     
     def select(self,atleta,idade,categoria,pontos):
         self.insert(atleta,idade,categoria,pontos)
@@ -20,3 +21,4 @@ class Lendas(Camp):
         self.dadoscamp['Idade'] = self.IdadeL
         self.dadoscamp['Categoria'] = self.CategoriaL
         self.dadoscamp['Pontuação'] = self.PontuacaoL
+        print('MenssageBox: Dados Persistidos com sucesso!')

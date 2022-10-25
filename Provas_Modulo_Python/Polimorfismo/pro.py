@@ -14,6 +14,7 @@ class profissionais(Lendas,Camp):
         self.Idadep.append(idade)
         self.Categoriap = categoria
         self.Pontuacaop.append(pontos)
+        
     
     def select(self,atleta,idade,categoria,pontos):
         self.insert(atleta,idade,categoria,pontos)
@@ -21,3 +22,4 @@ class profissionais(Lendas,Camp):
         self.dadoscamp['Idade'] = self.Idadep
         self.dadoscamp['Categoria'] = self.Categoriap
         self.dadoscamp['Pontuação'] = self.Pontuacaop
+        print('MenssageBox: Dados Persistidos com sucesso!')
