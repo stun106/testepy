@@ -1,3 +1,4 @@
+from math import ceil
 from Registro import Registro
 class sysEstacionamento(Registro):
     def __init__(self,name,cpf,tipoauto,model,placa):
@@ -32,8 +33,8 @@ class sysEstacionamento(Registro):
     def Saida(self):
         return self.__Saida
     @Saida.setter
-    def Saida(self,a,b ='y'):
-        if a == b:
+    def Saida(self):
+         if self.__Entrada[0] < self.__Saida:
             return self.__Saida 
 
     #metodos para importar horarios de entrada e saida de automoveis
@@ -51,7 +52,7 @@ class sysEstacionamento(Registro):
             for i in (self.__Entrada):
                 self.__Saida -= i
                 self.__valor += self.__Saida
-                return int(round(self.__valor* self.__valorporHora))
+                return int(ceil(self.__valor* self.__valorporHora))
             self.__resetsys()
         else: 
             return('"Informação incoerente", verifique seus dados!')
