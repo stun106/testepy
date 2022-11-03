@@ -22,3 +22,4 @@ class Lendas(Camp):
         self.dadoscamp['Categoria'] = self.CategoriaL
         self.dadoscamp['Pontuação'] = self.PontuacaoL
         print('MenssageBox: Dados Persistidos com sucesso!')
+

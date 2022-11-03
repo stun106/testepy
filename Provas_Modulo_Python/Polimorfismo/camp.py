@@ -9,6 +9,9 @@ Amador: 10 pontos
 Profissional: 50 pontos
 Lenda: 100 pontos'''
 
+
+
+
 class Camp:
     def __init__(self) -> None:
         self.Champ = ''
@@ -33,6 +36,8 @@ class Camp:
         self.dadoscamp['Premiação'] = self.premio
         self.dadoscamp['Patrocinadores'] = self.Patrocinadores
         self.dadoscamp['Atletas'] = self.Atletas
+
+   
         
 
 
