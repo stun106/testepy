@@ -1,9 +1,7 @@
-from sysRegistro import Registros
-class Guias(Registros):
+from Herança import Registros
+class users(Registros):
     def __init__(self) -> None:
         super().__init__()
-        self.FriendConection = ''
-        self.MediaTrilha = 0
 
     def __Insert_Into(self, nome, idade, endereco,conection):
         self._Name = nome
@@ -20,10 +18,3 @@ class Guias(Registros):
         return self._Date
 
 
-#teste
-# usuario = Guias()
-# nome = 'Mirabel'
-# idade = 39
-# endereco = 'Chapada Diamantina - Ba'
-# conection = 'Guia'
-# print(usuario.Select(nome,idade,endereco,conection))

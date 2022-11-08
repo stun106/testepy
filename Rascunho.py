@@ -269,10 +269,10 @@
 
 
     
-import math
+# import math
 
 
-horas = 5.00
+# horas = 5.00
 # entrada = int(input('informe: '))
 # saida = int(input('informe: '))
 # duração = 0
@@ -303,7 +303,29 @@ horas = 5.00
 # print(f'cpf registrado {cpf}')
     
 
+# data = ['amigo','familia']
+# pontos = 0
+# try:
+#     for x in data:
+#         if x == 'familia':
+#             pontos += 20
+#             print(pontos)
+#         else:
+#             pontos += 5
+            
+# except:
+#     print('Erro')
 
+
+
+data = ['amigo','familia','amigo','familia']
+pontos = 0
+for x in data:
+    if 'familia' in x:
+        pontos +=1
+    print(pontos)
+    elif 
+    
 
 
 
