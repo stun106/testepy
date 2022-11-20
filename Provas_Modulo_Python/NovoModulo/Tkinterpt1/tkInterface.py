@@ -6,7 +6,7 @@ from tkinter import ttk
 from metodos import *
 
 app = Tk()
-date = dict()
+date = {}
 #Configurações da tela principal
 app.title('Empresa')
 app.configure(background='#1e3743')
@@ -43,7 +43,7 @@ Btn = ttk.Button(app,text = 'R E G I S T R A R', command = lambda:salvar([
 Btn.place(relx = 0.35, rely= 0.75)
 
 def salvar(lista:list):
-    Query(lista,date)
+    Query(lista,date,NameEntry)
     ClearEntry(NameEntry,TelEntry)
     
 app.mainloop()
